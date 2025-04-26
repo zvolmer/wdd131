@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+  }
+  
+  .main-title,
+  .subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+  
+  .main-title {
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    color: #006EB6;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .container p {
+    text-align: left;
+    margin: 0 0 20px;
+  }
+  
+  .intro {
+    margin-top: 0;
+    font-style: italic;
+  }
+  
+  ol {
+    padding-left: 1.2em;
+    margin: 0 0 30px;
+  }
+  
+  ol li {
+    margin-bottom: 15px;
+  }
+  
+  .logo {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
