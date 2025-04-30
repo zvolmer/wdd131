@@ -6,6 +6,8 @@ selectElem.addEventListener("change", changeTheme);
 function changeTheme() {
     let current = selectElem.value;
     if (current == "dark"){
+        document.body.className = "dark";
+        
         // change body to dark
         // change logo to the new logo
     } else {
