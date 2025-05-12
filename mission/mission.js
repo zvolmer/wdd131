@@ -7,11 +7,11 @@ function changeTheme() {
     let current = selectElem.value;
     if (current == "dark"){
         document.body.className = "dark";
-        logo.src = "byui-logo_white.png";
+        logo.setAttribute("src", "byui-logo_white.png");
     
     } else {
         document.body.className = "";
-        logo.src = "byui-logo.webp";
+        logo.setAttribute("src", "byui-logo.webp");
         
     }
 }
