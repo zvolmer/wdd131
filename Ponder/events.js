@@ -4,7 +4,7 @@ function newTask() {
   // get the list element from the DOM
   // get the value entered into the #todo input
   // render out the list 
-  istElement.innerHTML += `
+  listElement.innerHTML += `
     <li> ${task}
       <div>
         <span data-function="delete">❎</span>
