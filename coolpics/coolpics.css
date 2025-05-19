@@ -10,7 +10,7 @@
   --secondary-font: 'Mooli', sans-serif;
 }
 
-html, body, header, main, footer, h1, h2, ul, figure {
+html, body, header, main, footer, h1, h2, ul, figure, dialog {
   margin: 0;
   padding: 0;
 }
@@ -27,10 +27,6 @@ body {
   color: var(--text-dark);
   background: #fafafa;
   line-height: 1.5;
-}
-
-main {
-  grid-row: 2;
 }
 
 .container {
@@ -75,11 +71,15 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-.main-nav {
+.hide {
+  display: none;
+}
+
+nav {
   display: block;
 }
 
-.main-nav ul {
+nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -88,7 +88,7 @@ header h1 {
   justify-content: center;
 }
 
-.main-nav a {
+nav a {
   font-weight: bold;
 }
 
@@ -117,6 +117,44 @@ main h2 {
   height: 150px;
 }
 
+dialog.viewer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  border: none;
+  padding: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+dialog.viewer::backdrop {
+  background: rgba(0,0,0,0.6);
+}
+
+dialog.viewer img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0;
+  border-radius: 4px;
+}
+
+button.close-viewer {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background: #ffffff;
+  border: none;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 footer {
   background: var(--primary-color);
   color: var(--text-light);
@@ -124,15 +162,16 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (min-width: 700px) and (max-width: 999px) {
-  .main-nav {
+@media screen and (max-width: 999px) {
+  nav.hide {
     display: none;
   }
-
   .menu-button {
     display: block;
   }
+}
 
+@media screen and (min-width: 700px) and (max-width: 999px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -143,21 +182,17 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
   .menu-button {
     display: none;
   }
-
-  .main-nav {
-    display: block;
+  nav {
+    display: block !important;
   }
-
-  .main-nav ul {
+  nav ul {
     flex-direction: row;
     gap: 1.5rem;
     justify-content: center;
   }
-  
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
