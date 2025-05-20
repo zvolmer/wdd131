@@ -1,48 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.querySelector('.menu-button');
-  const nav = document.querySelector('nav');
-  const gallery = document.querySelector('.gallery');
+  const menuButton = document.querySelector('.menu-button')
+  const nav = document.querySelector('nav')
+  const gallery = document.querySelector('.gallery')
 
-  function toggleMenu() {
-    nav.classList.toggle('hide');
-  }
-  menuButton.addEventListener('click', toggleMenu);
+  menuButton.addEventListener('click', () => {
+    nav.classList.toggle('hide')
+  })
 
-  function handleResize() {
-    if (window.innerWidth >= 1000) {
-      nav.classList.remove('hide');
-      menuButton.style.display = 'none';
-    } else {
-      nav.classList.add('hide');
-      menuButton.style.display = 'block';
-    }
-  }
-  window.addEventListener('resize', handleResize);
-  handleResize();
+  gallery.addEventListener('click', event => {
+    const clickedImg = event.target.closest('img')
+    if (!clickedImg) return
 
-  gallery.addEventListener('click', (event) => {
-    const img = event.target.closest('img');
-    if (!img) return;
-    const base = img.src.split('-')[0];
-    const fullSrc = `${base}-full.jpeg`;
-    const dialog = document.createElement('dialog');
-    dialog.classList.add('viewer');
-    dialog.innerHTML = `
-      <img src="${fullSrc}" alt="${img.alt}">
-      <button class="close-viewer" aria-label="Close viewer">✕</button>
-    `;
-    document.body.appendChild(dialog);
-    dialog.showModal();
-    dialog.querySelector('.close-viewer').addEventListener('click', () => {
-      dialog.close();
-    });
-    dialog.addEventListener('click', (e) => {
-      if (e.target === dialog) {
-        dialog.close();
+    const baseName = clickedImg.src.split('-')[0]
+    const fullSrc = `${baseName}-full.jpeg`
+
+    const modal = document.createElement('dialog')
+    modal.innerHTML = `
+      <img src="" alt="">
+      <button class="close-viewer">X</button>
+    `
+    document.body.appendChild(modal)
+
+    const modalImg = modal.querySelector('img')
+    const closeBtn = modal.querySelector('.close-viewer')
+    modalImg.src = fullSrc
+    modalImg.alt = clickedImg.alt
+
+    modal.showModal()
+
+    closeBtn.addEventListener('click', () => {
+      modal.close()
+    })
+
+    modal.addEventListener('click', e => {
+      if (e.target === modal) {
+        modal.close()
       }
-    });
-    dialog.addEventListener('close', () => {
-      dialog.remove();
-    });
-  });
-});
+    })
+
+    modal.addEventListener('close', () => {
+      modal.remove()
+    })
+  })
+})

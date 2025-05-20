@@ -137,9 +137,23 @@ dialog.viewer::backdrop {
 
 dialog.viewer img {
   max-width: 90%;
-  max-height: 90%;
+  max-height: 80%;
   margin: 0;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 700px) {
+  dialog.viewer img {
+    max-width: 70%;
+    max-height: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  dialog.viewer img {
+    max-width: 60%;
+    max-height: 80%;
+  }
 }
 
 button.close-viewer {
