@@ -4,12 +4,12 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 @font-face {
     font-family: DK Longreach;
-    src: url("C:\Users\zacat\OneDrive\Desktop\BYUI\Semester 3\wdd131\final-project\Fonts\DK Longreach.otf");
+    src: url("Fonts/DK\ Longreach.otf");
 }
 
 @font-face {
     font-family: NeoRetroFill;
-    src: url("C:\Users\zacat\OneDrive\Desktop\BYUI\Semester 3\wdd131\final-project\Fonts\NEORF___.TTF");
+    src: url("Fonts/NEORF___.TTF");
 }
 
 :root {
@@ -20,7 +20,7 @@ Fonts are separated by a | */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "DK Longreack";
+  --heading-font: "DK Longreach";
   --paragraph-font: "NeoRetroFill";
 
   /* these colors below should be chosen from among your palette colors above */
