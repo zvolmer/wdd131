@@ -2,10 +2,6 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
-@font-face {
-    font-family: DK Longreach;
-    src: url("Fonts/DK\ Longreach.otf");
-}
 
 @font-face {
     font-family: NeoRetroFill;
@@ -14,13 +10,13 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #627795;
-  --secondary-color: #c3d4b4;
-  --accent1-color: #826a56;
-  --accent2-color: white;
+  --primary-color: Black;
+  --secondary-color: White;
+  --accent1-color: #627795;
+  --accent2-color: #c3d4b4;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "DK Longreach";
+  --heading-font: "NeoRetroFill";
   --paragraph-font: "NeoRetroFill";
 
   /* these colors below should be chosen from among your palette colors above */
