@@ -1,0 +1,186 @@
+@font-face {
+    font-family: NeoRetroFill;
+    src: url("Fonts/NEORF___.TTF");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'NeoRetrofill';
+    text-align: center;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: 'NeoRetrofill';
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.8rem;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hamburger {
+    width: 24px;
+    height: 3px;
+    background: #fff;
+}
+
+.logo-link {
+    margin-left: 0.45rem;
+    margin-right: auto;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.social-nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.social-nav img {
+    width: 30px;
+    height: 30px;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-prev,
+.hero-next {
+    position: absolute;
+    top: 50%;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.hero-prev { left: 1rem; }
+.hero-next { right: 1rem; }
+
+.new-release,
+.event,
+.merch {
+    padding: 1rem 0;
+}
+
+.new-release img,
+.event img,
+.merch img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.new-release h2,
+.event h2,
+.merch h2 {
+    margin-top: 0.5rem;
+}
+
+.new-release p,
+.event p,
+.merch p {
+    margin-top: 0.25rem;
+}
+
+.stream-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.stream-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.merch {
+    margin-bottom: 1.5rem;
+}
+
+.site-footer {
+    background: #111;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.footer-left,
+.footer-contact,
+.footer-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-brand,
+.footer-link {
+    font-size: 1rem;
+}
+
+.footer-link {
+    line-height: 1.2;
+}
+
+.footer-right {
+    gap: 0.5rem;
+}
+
+.footer-right img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 768px) {
+}
