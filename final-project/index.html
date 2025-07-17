@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flightless Band</title>
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <button class="menu-toggle" aria-label="Open menu">
+    <button class="menu-toggle" aria-label="Toggle menu">
       <span class="hamburger"></span>
       <span class="hamburger"></span>
       <span class="hamburger"></span>
@@ -27,11 +27,22 @@
     </nav>
   </header>
 
+  <nav class="mobile-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Merch Store</a></li>
+      <li><a href="#">Tickets/Live Schedule</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
   <section class="hero">
     <img src="images/hero1.jpg" alt="Hero Image">
     <button class="hero-prev" aria-label="Previous">‹</button>
     <button class="hero-next" aria-label="Next">›</button>
   </section>
+
+  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/1hCzX156QTfQV8eqqaJBYT?utm_source=generator" width="80%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
   <section class="new-release">
     <img src="images/AcousticEP.jpg" alt="Cover art for the Acoustic EP by Flightless">
@@ -41,7 +52,7 @@
       <a href="https://open.spotify.com/album/70GQGTCdJw9p4koFLo7HSA?si=wkJhmCymQb-Cm1-gJtC5dw" target="_blank"><img src="images/Spotify.png" alt="Spotify Logo Link"></a>
       <a href="https://music.youtube.com/playlist?list=OLAK5uy_kMeF4C-DJ0ABwCy605pA4OSqc_Ugjte9M&si=rZLVGZLweoN3lUlU" target="_blank"><img src="images/YouTube.png" alt="YouTube Logo Link"></a>
       <a href="https://music.apple.com/us/album/acoustic-ep-ep/1780238143" target="_blank"><img src="images/AppleMusic.png" alt="Apple Music Logo Link"></a>
-      <a href="https://music.amazon.com/albums/B0DN9RCHS7?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_XLUVYWkY0mRkyp8dvrwuQIC6e" target="_blank"><img src="images/Amazon.png" alt="Amazon Music Logo Link"></a>
+      <a href="https://music.amazon.com/albums/B0DN9RCHS7?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_XLUVYWkY0mRkyp8dvrwuQIC6e" target="_blank"><img src="images/Amazon.png" alt="Amazon Logo Link"></a>
       <a href="https://flightless-band.bandcamp.com/album/acoustic-ep" target="_blank"><img src="images/BandCamp.png" alt="BandCamp Logo Link"></a>
       <a href="https://soundcloud.com/flightless_band/sets/acoustic-ep?si=266d6dbd5cb1445581d0dcece72e5ca0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><img src="images/SoundCloud.png" alt="SoundCloud Logo Link"></a>
     </div>
