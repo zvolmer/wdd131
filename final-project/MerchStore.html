@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <title>Flightless Band</title>
+  <title>Flightless Band – Merch Store</title>
   <link rel="preload" href="Fonts/NEORF___.TTF" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="styles.css" as="style">
   <link rel="preconnect" href="https://open.spotify.com" crossorigin>
@@ -25,7 +25,12 @@
       <span class="hamburger"></span>
     </button>
     <a href="index.html" class="logo-link">
-      <img src="images/GoodLogo.png" alt="Flightless Band Logo" class="logo" width="50" height="50" loading="lazy">
+      <img src="images/GoodLogo.png"
+           alt="Flightless Band Logo"
+           class="logo"
+           width="50"
+           height="50"
+           loading="lazy">
     </a>
     <div class="header-title">Flightless</div>
     <nav class="social-nav">
@@ -47,49 +52,48 @@
     </ul>
   </nav>
 
-  <section class="hero">
-    <img src="images/hero1.jpg" alt="Hero Image" width="1600" height="900">
-    <button class="hero-prev" aria-label="Previous">‹</button>
-    <button class="hero-next" aria-label="Next">›</button>
-  </section>
+  <main class="merch-store">
+    <form class="search-bar">
+      <input type="search" name="q" id="search" placeholder="Search merch…" autocomplete="off">
+    </form>
 
-  <iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/artist/1hCzX156QTfQV8eqqaJBYT?utm_source=generator"
-    width="80%"
-    height="352"
-    frameborder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-</iframe>
-
-
-  <div class="release-row">
-    <section class="new-release">
-      <img src="images/AcousticEP.jpg" alt="Cover art for the Acoustic EP by Flightless" width="800" height="800" loading="lazy">
-      <h2>New Release</h2>
-      <p>Stream the Acoustic EP now!</p>
-      <div class="stream-links">
-        <a href="https://open.spotify.com/album/70GQGTCdJw9p4koFLo7HSA?si=wkJhmCymQb-Cm1-gJtC5dw" target="_blank"><img src="images/Spotify.png" alt="Spotify Logo Link" width="40" height="40" loading="lazy"></a>
-        <a href="https://music.youtube.com/playlist?list=OLAK5uy_kMeF4C-DJ0ABwCy605pA4OSqc_Ugjte9M&si=rZLVGZLweoN3lUlU" target="_blank"><img src="images/YouTube.png" alt="YouTube Logo Link" width="40" height="40" loading="lazy"></a>
-        <a href="https://music.apple.com/us/album/acoustic-ep-ep/1780238143" target="_blank"><img src="images/AppleMusic.png" alt="Apple Music Logo Link" width="40" height="40" loading="lazy"></a>
-        <a href="https://music.amazon.com/albums/B0DN9RCHS7?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_XLUVYWkY0mRkyp8dvrwuQIC6e" target="_blank"><img src="images/Amazon.png" alt="Amazon Logo Link" width="40" height="40" loading="lazy"></a>
-        <a href="https://flightless-band.bandcamp.com/album/acoustic-ep" target="_blank"><img src="images/BandCamp.png" alt="BandCamp Logo Link" width="40" height="40" loading="lazy"></a>
-        <a href="https://soundcloud.com/flightless_band/sets/acoustic-ep?si=266d6dbd5cb1445581d0dcece72e5ca0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank"><img src="images/SoundCloud.png" alt="SoundCloud Logo Link" width="40" height="40" loading="lazy"></a>
+    <div class="merch-items">
+      <div class="merch-item" data-name="flightless deluxe cd">
+        <img src="images/FrontCoverCD.jpg" alt="Flightless Deluxe CD" width="300" height="300" loading="lazy">
+        <h3>Flightless Deluxe CD</h3>
+        <p>$10.00 + Shipping</p>
+        <p class="local-delivery">(Free delivery to Tri‑Cities, Spokane, and Rexburg)</p>
       </div>
-    </section>
-    
-    <section class="merch">
-      <img src="images/Sticker.png" alt="Flightless Logo Sticker" width="800" height="800" loading="lazy">
-      <h2><a href="MerchStore.html">Shop Now</a></h2>
-      <p><a href="MerchStore.html">view our merch store here</a></p>
-    </section>
-  </div>
 
-  <section class="event">
-    <img src="images/BattleVestFest.jpg" alt="The poster for the Battle Vest Fest. Flightless is scheduled to play on August 9th at 1PM at Ray's Golden Lion." width="800" height="1000" loading="lazy">
-    <h2><a href="https://www.zplnr.com/events/bvfday2?fbclid=PAZXh0bgNhZW0CMTEAAafoFApFUzLDBkQ1aWRJqv6oHPWPpesATdTqRZl9MIIISL8VFEW4NUJYQbBFgw_aem_66bHpjmE7KGNbgL7W01X7A" target="blank">Battle Vest Fest August 9th tickets here</a></h2>
-    <p><a href="Events.html">view our live schedule here</a></p>
-  </section>
+      <div class="merch-item" data-name="flightless logo sticker">
+        <img src="images/Sticker.png" alt="Flightless Logo Sticker" width="300" height="300" loading="lazy">
+        <h3>Flightless Logo Sticker (5‑pack)</h3>
+        <p>$3.00 + Shipping</p>
+        <p class="local-delivery">(Free delivery to Tri‑Cities, Spokane, and Rexburg)</p>
+      </div>
+
+      <div class="merch-item" data-name="t-shirt">
+        <img src="images/ComingSoon.jpg" alt="T‑Shirt" width="300" height="300" loading="lazy">
+        <h3>T‑Shirt</h3>
+        <p>Coming soon + Shipping</p>
+        <p class="local-delivery">(Free delivery to Tri‑Cities, Spokane, and Rexburg)</p>
+      </div>
+    </div>
+
+    <div id="no-results" class="no-results" style="display:none;">
+      No items could be found containing those keywords.
+    </div>
+
+    <div class="contact-order">
+      Contact us at
+      <a
+        href="mailto:flightlessgentlemensassociation@outlook.com?subject=Flightless%20Merch%20Order"
+        class="contact-email">
+        flightlessgentlemensassociation@outlook.com
+      </a>
+      to place an order!
+    </div>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-container">
@@ -97,7 +101,7 @@
         <span class="footer-brand">Flightless © 2025</span>
       </div>
       <div class="footer-contact">
-        <a href="ContactUs.html" class="footer-link">Contact Us</a>
+        <a href="#" class="footer-link">Contact Us</a>
       </div>
       <div class="footer-right">
         <a href="https://www.instagram.com/flightless_band/" target="_blank"><img src="images/Instagram.png" alt="Instagram Logo Link" width="30" height="30" loading="lazy"></a>
