@@ -190,7 +190,7 @@ iframe {
     width: 80%;
     max-width: 800px;
     height: auto;
-    margin: 0 5px auto 5px;
+    margin: 0 auto;
     display: block;
     transition: none;
 }
